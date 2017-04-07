@@ -5,5 +5,6 @@ export class Rafter {
     public state: string,
     public yearsRafting: number,
     public favoriteRiverStretch: string,
-    public guide: string) { }
+    public guide: string,
+    public comments: string) { }
 }
