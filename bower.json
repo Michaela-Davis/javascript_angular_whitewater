@@ -1,0 +1,17 @@
+{
+  "name": "whitewater",
+  "description": "An application for whitewater rafteres",
+  "main": "",
+  "authors": [
+    "Michaela Davis"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
