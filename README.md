@@ -32,9 +32,8 @@ You will need the following things properly installed on your computer:
         authDomain: "xxxx.firebaseapp.com",
         databaseURL: "https://xxxx.firebaseio.com",
         storageBucket: "xxxx.appspot.com",
-        messagingSenderId: "xxxx"
-      };
-      ```
+        messagingSenderId: "xxxx" };
+
 * Create a free [Firebase](https://firebase.google.com/) Account
 * Create a remote database for the application through Firebase's website:
   * Go to the user dashboard area. Choose the option "Create a New Project".
