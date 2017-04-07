@@ -5,11 +5,31 @@ h1,
 h2,
 h3 {
   font-family: 'Macondo', cursive;
-  color: black;
 }
 
+ /*begin BACKGROUND IMAGE STYLING*/
 body {
-    background-image: url("assets/flatheadLakeMichaela.jpg");
-    background-repeat: no-repeat;
-    /*background-position: right top;*/
+  background-image: url("assets/flatheadLakeMichaela.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
 }
+
+/*Create dark overlay of body background image*/
+body:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+/*Move app above the overlay*/
+app-root {
+  z-index: 10;
+  position: relative;
+}
+ /*end BACKGROUND IMAGE STYLING*/
