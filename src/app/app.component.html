@@ -1,6 +1,28 @@
-<div class="container">
+<!-- begin     NAV BAR -->
+<nav class="navbar navbar-default">
+  <div class="nav-about-links-padding">
 
+  <a routerLink="">
+    <div class="navbar-header">
+      <img routerLink="" class="logoImage" src="assets/raftLogo.png" alt="Whitewater rafting logo"/>
+    </div>
+  </a>
+  <a class="navbar-brand" routerLink="">Sunny Days Whitewater</a>
+</div>
+
+  <div class="container">
+    <div class="nav navbar-nav navbar-right">
+      <a routerLink="rafters" class="nav-link-RAFTERS">RAFTERS!</a>
+      <a routerLink="admin" class="nav-link-Admin">Admin</a>
+    </div>
+  </div>
+</nav>
+<!-- end     NAV BAR -->
+
+
+<div class="container">
   <h1>
     {{title}}
   </h1>
+  <router-outlet></router-outlet>
 </div>

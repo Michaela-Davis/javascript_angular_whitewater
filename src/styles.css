@@ -3,11 +3,13 @@
 body,
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: 'Macondo', cursive;
+  color: white;
 }
 
- /*begin BACKGROUND IMAGE STYLING*/
+ /*begin     BACKGROUND IMAGE STYLING    */
 body {
   background-image: url("assets/flatheadLakeMichaela.jpg");
   background-repeat: no-repeat;
@@ -29,7 +31,74 @@ body:before {
 
 /*Move app above the overlay*/
 app-root {
+  /*if you have something that is positioned relative it will move it vertically according to what's on top of other things. the bigger the z-index the further it is brough up*/
   z-index: 10;
   position: relative;
 }
- /*end BACKGROUND IMAGE STYLING*/
+ /*end     BACKGROUND IMAGE STYLING    */
+
+
+
+/* begin    NAV BAR STYLING     */
+.logoImage {
+  max-width: 70px;
+}
+
+.nav-about-links-padding {
+  padding-left: 30px;
+}
+
+.nav-link-RAFTERS {
+  padding-right: 400px;
+  font-size: 4em;
+  color: white;
+  z-index: 10;
+  position: relative;
+}
+
+.nav-link-Admin {
+  padding-right: 20px;
+  z-index: 10;
+  position: relative;
+}
+/* end    NAV BAR STYLING     */
+
+
+
+/* begin  ABOUT PAGE   STYLING     */
+.about-logoImage {
+  display: block;
+  margin: auto;
+  width: 8%;
+  padding-bottom: 25px;
+}
+
+.about-headline {
+  text-align: center;
+}
+
+.about-header {
+  text-align: center;
+  margin-top: -20px;
+}
+
+.about-header h2 {
+  display: inline-block;
+}
+.about-header img {
+  display: inline-block;
+}
+
+/* end     STYLING     */
+
+
+
+/* begin     STYLING     */
+
+/* end      STYLING     */
+
+
+
+/* begin     STYLING     */
+
+/* end      STYLING     */
