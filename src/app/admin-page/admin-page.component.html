@@ -1,0 +1,60 @@
+<div class="panel panel-default">
+  <div class="panel-heading panel-heading-admin">
+    <h3 class="panel-title">Add New Rafter to Group</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>Name:</label>
+        <input #newName class="admin-teal-input-text">
+
+        <label>State:</label>
+        <input #newState class="admin-teal-input-text">
+
+        <label>Email:</label>
+        <input #newEmail class="admin-teal-input-text">
+      </div>
+      <br>
+      <div>
+        <label>Years Rafting:</label>
+        <input #newYearsRafting class="admin-teal-input-text" min="1" type="number">
+
+        <label>Favorite River Stretch:</label>
+        <input #newFavoriteRiverStretch class="admin-teal-input-text">
+
+        <label>Guide:</label>
+        <input #newGuide class="admin-teal-input-text">
+      </div>
+      <br>
+      <div>
+        <label>Comments:</label>
+        <br>
+        <textarea #newComments class="admin-teal-input-text"></textarea>
+      </div>
+
+
+      <button (click)="submitForm(
+      newName.value,
+      newEmail.value,
+      newState.value,
+      newYearsRafting.value,
+      newFavoriteRiverStretch.value,
+      newGuide.value,
+      newComments.value);
+
+      newName.value='';
+      newEmail.value='';
+      newState.value='';
+      newYearsRafting.value='';
+      newFavoriteRiverStretch.value='';
+      newGuide.value='';
+      newComments.value=''"
+      class="btn btn-primary"
+      ><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;Add</button>
+    </div>
+  </div>
+</div>
+<br>
+<div>
+  <app-rafter-list></app-rafter-list>
+</div>

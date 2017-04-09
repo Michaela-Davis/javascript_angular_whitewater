@@ -71,10 +71,23 @@ app-root {
 }
 
 .nav-link-Admin {
-  padding-right: 20px;
   z-index: 10;
   position: relative;
   color: teal;
+}
+
+.nav-link-Admin:hover {
+  color: white !important;
+}
+
+.nav-link-Admin:visited {
+  color: teal;
+  text-decoration: none !important;
+}
+
+.nav-link-Admin:focus {
+  color: teal;
+  text-decoration: none !important;
 }
 
 /* end    NAV BAR STYLING     */
@@ -119,9 +132,10 @@ app-root {
 
 .drop-down-sort {
   color: teal;
-  text-align: right;
+  text-align: center;
   margin-top: -20px;
-  padding-right: 70px;
+  padding-right: 50px;
+  font-size: 130%;
 }
 
 .list-panel {
@@ -174,6 +188,25 @@ app-root {
 }
 
 /* end  RAFTER-DETAIL COMPONENT    STYLING     */
+
+
+
+/* begin  ADMIN PAGE  STYLING     */
+
+.panel-default>.panel-heading {
+  background-color: rgba(0, 66, 66, .90);
+  color: white;
+}
+.admin-teal-input-text {
+  color: teal;
+  font-size: 1.5em;
+}
+
+.admin input {
+  padding-right: 120px;
+}
+
+/* end   ADMIN PAGE   STYLING     */
 
 
 

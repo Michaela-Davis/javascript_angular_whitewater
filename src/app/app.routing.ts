@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeAboutComponent } from './home-about/home-about.component';
 import { RafterListComponent } from './rafter-list/rafter-list.component';
 import { RafterDetailComponent } from './rafter-detail/rafter-detail.component';
+import { AdminPageComponent } from './admin-page/admin-page.component';
 
 const appRoutes: Routes = [
   {
@@ -17,6 +18,10 @@ const appRoutes: Routes = [
   {
     path: 'rafters/:id',
     component: RafterDetailComponent
+  },
+  {
+    path: 'admin',
+    component: AdminPageComponent
   }
 
 ];
