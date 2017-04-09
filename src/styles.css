@@ -10,22 +10,20 @@ h4 {
 }
 
  /*begin     BACKGROUND IMAGE STYLING    */
+
 body {
   background-image: url("assets/flatheadLakeMichaela.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  min-height: 100vh;
 }
 
 /*Create dark overlay of body background image*/
 body:before {
   content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.65);
 }
 
@@ -35,11 +33,13 @@ app-root {
   z-index: 10;
   position: relative;
 }
+
  /*end     BACKGROUND IMAGE STYLING    */
 
 
 
 /* begin    NAV BAR STYLING     */
+
 .logoImage {
   max-width: 70px;
 }
@@ -60,12 +60,15 @@ app-root {
   padding-right: 20px;
   z-index: 10;
   position: relative;
+  color: teal;
 }
+
 /* end    NAV BAR STYLING     */
 
 
 
 /* begin  ABOUT PAGE   STYLING     */
+
 .about-logoImage {
   display: block;
   margin: auto;
@@ -89,13 +92,29 @@ app-root {
   display: inline-block;
 }
 
-/* end     STYLING     */
+.about-paragraphs {
+  padding-left: 90px;
+  padding-right: 90px;
+}
+
+/* end  ABOUT PAGE    STYLING     */
 
 
 
-/* begin     STYLING     */
+/* begin  RAFTER-LIST COMPONENT   STYLING     */
 
-/* end      STYLING     */
+.panel {
+  background-color: rgba(0, 66, 66, 0.75);
+  font-size: 60%;
+  margin: 15px;
+}
+
+.list-center {
+  text-align: center;
+  min-height: 170px;
+}
+
+/* end   RAFTER-LIST COMPONENT    STYLING     */
 
 
 

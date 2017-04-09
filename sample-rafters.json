@@ -15,20 +15,36 @@
     "guide": "Yes, informally",
     "comments": "I own an 8-person raft. Email me if you'd like to plan a trip!!"
     }, {
-      "name": "Eric Bostrum",
-      "email": "daBoss@gmail.com",
-      "state": "Montana",
-      "yearsRafting": "20",
-      "favoriteRiverStretch": "The Salmon River in Idaho",
-      "guide": "Yes, I was a professional guide in the past.",
-      "comments": "I own an 8-person raft but I'm out of town with my band a lot..."
+    "name": "Eric Bostrum",
+    "email": "daBoss@gmail.com",
+    "state": "Montana",
+    "yearsRafting": "20",
+    "favoriteRiverStretch": "The Salmon River in Idaho",
+    "guide": "Yes, I was a professional guide in the past.",
+    "comments": "I own an 8-person raft but I'm out of town with my band a lot..."
     }, {
-      "name": "Evan Lovely",
-      "email": "evan@evanlovely.com",
-      "state": "Oregon",
-      "yearsRafting": "36",
-      "favoriteRiverStretch": "Anywhere!!!",
-      "guide": "Nope",
-      "comments": "I own an 6-person raft and 2 person sea-kayak but we just had a kid so I never go out anymore"
+    "name": "Evan Lovely",
+    "email": "evan@evanlovely.com",
+    "state": "Oregon",
+    "yearsRafting": "36",
+    "favoriteRiverStretch": "Anywhere!!!",
+    "guide": "Nope",
+    "comments": "I own an 6-person raft and 2 person sea-kayak but we just had a kid so I never go out anymore"
+    }, {
+    "name": "Shande Weist",
+    "email": "shande@unicornsaremagic.com",
+    "state": "Montana",
+    "yearsRafting": "10",
+    "favoriteRiverStretch": "The Alberton Gorge outside of Missoula, MT",
+    "guide": "Only when I'm a unicorn...",
+    "comments": "Can't do the extreme stuff since my brain surgery."
+    }, {
+    "name": "Ryan Savitz",
+    "email": "ryan@rafting.com",
+    "state": "Oregon",
+    "yearsRafting": "36",
+    "favoriteRiverStretch": "There are so many wonderful choices",
+    "guide": "Professionally. Many years. Several outfitters",
+    "comments": "I'm totally into white-water paddle boarding currently!'"
   }]
 }
