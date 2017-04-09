@@ -22,4 +22,20 @@ export class RafterService  {
     this.rafters.push(newRafter);
   }
 
+  updateRafter(localUpdatedRafter){
+    var rafterEntryInFirebase = this.getRafterById(localUpdatedRafter.$key);
+    rafterEntryInFirebase.update({name: localUpdatedRafter.name,
+                                email: localUpdatedRafter.email,
+                                state: localUpdatedRafter.state,
+                                yearsRafting: localUpdatedRafter.yearsRafting,
+                                favoriteRiverStretch: localUpdatedRafter.favoriteRiverStretch,
+                                guide: localUpdatedRafter.guide,
+                                comments: localUpdatedRafter.comments});
+  }
+
+  deleteRafter(localRafterToDelete){
+    var rafterEntryInFirebase = this.getRafterById(localRafterToDelete.$key);
+    rafterEntryInFirebase.remove();
+  }
+
 }

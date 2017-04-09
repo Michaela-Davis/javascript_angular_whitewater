@@ -13,5 +13,10 @@
     <h3 (click)="goToDetailPage(rafter)" class="list-rafter-name-link">{{rafter.name}}</h3>
     <br>
     <h4>{{rafter.state}}</h4>
+    <div *ngIf="currentRoute === '/admin'">
+      <br>
+      <h4>{{rafter.email}}</h4>
+      <app-edit-rafter [selectedRafter]="rafter"></app-edit-rafter>
+    </div>
   </div>
 </div>

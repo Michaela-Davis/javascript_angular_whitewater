@@ -12,6 +12,7 @@ import { HomeAboutComponent } from './home-about/home-about.component';
 import { RafterDetailComponent } from './rafter-detail/rafter-detail.component';
 import { RafterSortPipe } from './rafter-sort.pipe';
 import { AdminPageComponent } from './admin-page/admin-page.component';
+import { EditRafterComponent } from './edit-rafter/edit-rafter.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -27,7 +28,8 @@ export const firebaseConfig = {
     HomeAboutComponent,
     RafterDetailComponent,
     RafterSortPipe,
-    AdminPageComponent
+    AdminPageComponent,
+    EditRafterComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,32 @@
+<br>
+<button (click)="beginDeletingRafter(selectedRafter)" class="btn btn-warning"><i class="fa fa-trash" aria-hidden="true"></i>&nbsp;Delete</button> &nbsp;&nbsp;&nbsp;&nbsp; <button (click)="beginUpdatingRafter(selectedRafter)" class="btn btn-info"><i class="fa fa-pencil" aria-hidden="true"></i>&nbsp;Update</button>
+<br>
+<hr>
+<label>Name:</label>
+<input [(ngModel)]="selectedRafter.name" class="edit-teal-input-text">
+<br>
+
+<label>State:</label>
+<input [(ngModel)]="selectedRafter.state" class="edit-teal-input-text">
+<br>
+
+<label>Email:</label>
+<input [(ngModel)]="selectedRafter.email" class="edit-teal-input-text">
+<br>
+
+<label>Years Rafting:</label>
+<input [(ngModel)]="selectedRafter.yearsRafting" class="edit-teal-input-text">
+<br>
+
+<label>Favorite River Stretch:</label>
+<input [(ngModel)]="selectedRafter.favoriteRiverStretch" class="edit-teal-input-text">
+<br>
+
+<label>Guide:</label>
+<input [(ngModel)]="selectedRafter.guide" class="edit-teal-input-text">
+<br>
+
+<label>Comments:</label>
+<input [(ngModel)]="selectedRafter.comments" class="edit-teal-input-text">
+<br>
+<br>
