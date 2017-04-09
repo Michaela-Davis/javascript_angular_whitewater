@@ -56,6 +56,20 @@ app-root {
   position: relative;
 }
 
+.nav-link-RAFTERS:hover {
+  color: teal !important;
+}
+
+.nav-link-RAFTERS:visited {
+  color: white;
+  text-decoration: none !important;
+}
+
+.nav-link-RAFTERS:focus {
+  color: white;
+  text-decoration: none !important;
+}
+
 .nav-link-Admin {
   padding-right: 20px;
   z-index: 10;
