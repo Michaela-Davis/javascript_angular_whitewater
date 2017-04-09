@@ -1,0 +1,17 @@
+<div class="panel detail-panel">
+  <div class="container detail-container">
+    <h2>{{(rafterToDisplay | async)?.name}}</h2>
+    <br>
+    <h4><span class="detail-teal-text">Email: </span>{{(rafterToDisplay | async)?.email}}</h4>
+
+    <h4><span class="detail-teal-text">State: </span>{{(rafterToDisplay | async)?.state}}</h4>
+
+    <h4><span class="detail-teal-text">Years rafting: </span>{{(rafterToDisplay | async)?.yearsRafting}}</h4>
+
+    <h4><span class="detail-teal-text">Favorite River Stretch: </span>{{(rafterToDisplay | async)?.favoriteRiverStretch}}</h4>
+
+    <h4><span class="detail-teal-text">Guide: </span>{{(rafterToDisplay | async)?.guide}}</h4>
+
+    <h4><span class="detail-teal-text">Comments: </span>{{(rafterToDisplay | async)?.comments}}</h4>
+  </div>
+</div>

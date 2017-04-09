@@ -103,8 +103,16 @@ app-root {
 
 /* begin  RAFTER-LIST COMPONENT   STYLING     */
 
-.panel {
+.list-panel {
   background-color: rgba(0, 66, 66, 0.75);
+  font-size: 60%;
+  margin: 15px;
+}
+
+.list-panel:hover {
+  background-color: rgba(0, 66, 66, .90);
+  box-shadow: 2px 3px 4px black;
+  transition: all 0.5s ease;
   font-size: 60%;
   margin: 15px;
 }
@@ -114,7 +122,37 @@ app-root {
   min-height: 170px;
 }
 
+.list-rafter-name-link:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  text-shadow: 35px;
+}
+
 /* end   RAFTER-LIST COMPONENT    STYLING     */
+
+
+
+/* begin  RAFTER-DETAIL COMPONENT   STYLING     */
+
+.detail-panel {
+  background-color: rgba(0, 0, 0, 0.75);
+  min-height: 475px;
+}
+
+.detail-container {
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 20px;
+}
+
+.detail-teal-text {
+  color: teal;
+  font-size: 80%;
+  padding-right: 10px;
+  padding-left: 15px;
+}
+
+/* end  RAFTER-DETAIL COMPONENT    STYLING     */
 
 
 

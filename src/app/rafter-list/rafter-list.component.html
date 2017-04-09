@@ -1,15 +1,7 @@
-<!-- <div class="col-sm-4">
-  <div class="panel list-center">
-    Rafter name will be a clickable link to detail page that changes on hover
-    <h2>Rafter Name</h2>
-    <h3>Rafter State</h3>
-  </div>
-</div> -->
-
 <div *ngFor="let rafter of rafters | async" class="col-sm-4" >
-  <div class="panel list-center">
+  <div class="panel list-panel list-center">
     <br>
-    <h3>{{rafter.name}}</h3>
+    <h3 (click)="goToDetailPage(rafter)" class="list-rafter-name-link">{{rafter.name}}</h3>
     <br>
     <h4>{{rafter.state}}</h4>
   </div>

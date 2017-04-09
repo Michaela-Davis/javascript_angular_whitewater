@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { HomeAboutComponent } from './home-about/home-about.component';
 import { RafterListComponent } from './rafter-list/rafter-list.component';
+import { RafterDetailComponent } from './rafter-detail/rafter-detail.component';
 
 const appRoutes: Routes = [
   {
@@ -12,6 +13,10 @@ const appRoutes: Routes = [
   {
     path: 'rafters',
     component: RafterListComponent
+  },
+  {
+    path: 'rafters/:id',
+    component: RafterDetailComponent
   }
 
 ];

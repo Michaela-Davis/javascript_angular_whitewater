@@ -9,6 +9,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AppComponent } from './app.component';
 import { RafterListComponent } from './rafter-list/rafter-list.component';
 import { HomeAboutComponent } from './home-about/home-about.component';
+import { RafterDetailComponent } from './rafter-detail/rafter-detail.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -21,7 +22,8 @@ export const firebaseConfig = {
   declarations: [
     AppComponent,
     RafterListComponent,
-    HomeAboutComponent
+    HomeAboutComponent,
+    RafterDetailComponent
   ],
   imports: [
     BrowserModule,

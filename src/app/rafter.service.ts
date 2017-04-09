@@ -13,5 +13,9 @@ export class RafterService  {
   getRafters() {
     return this.rafters;
   }
-  
+
+  getRafterById(rafterId: string) {
+  return this.angularFire.database.object('rafters/' + rafterId)
+}
+
 }

@@ -14,11 +14,14 @@ export class RafterListComponent implements OnInit {
   rafters: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
 
-
   constructor(private router: Router, private rafterService: RafterService) {}
 
   ngOnInit() {
     this.rafters = this.rafterService.getRafters();
+  }
+
+  goToDetailPage(clickedRafter) {
+    this.router.navigate(['rafters', clickedRafter.$key]);
   }
 
 }
