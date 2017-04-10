@@ -1,32 +1,31 @@
 <br>
-<button (click)="beginDeletingRafter(selectedRafter)" class="btn btn-warning"><i class="fa fa-trash" aria-hidden="true"></i>&nbsp;Delete</button> &nbsp;&nbsp;&nbsp;&nbsp; <button (click)="beginUpdatingRafter(selectedRafter)" class="btn btn-info"><i class="fa fa-pencil" aria-hidden="true"></i>&nbsp;Update</button>
-<br>
-<hr>
-<label>Name:</label>
-<input [(ngModel)]="selectedRafter.name" class="edit-teal-input-text">
-<br>
+<button (click)="beginDeletingRafter(selectedRafter)" class="btn btn-warning"><i class="fa fa-trash" aria-hidden="true"></i>&nbsp;Delete</button> &nbsp;&nbsp;&nbsp;&nbsp; <button (click)="beginUpdatingRafter(selectedRafter)" class="btn btn-info"><i class="fa fa-pencil" aria-hidden="true"></i>&nbsp;Edit</button>
+<div class="edit-form-padding">
+  <hr>
+  <!-- Name -->
+  <input [(ngModel)]="selectedRafter.name" class="edit-teal-input-text form-control" type="text">
+  <br>
 
-<label>State:</label>
-<input [(ngModel)]="selectedRafter.state" class="edit-teal-input-text">
-<br>
+  <!-- State:  -->
+  <input [(ngModel)]="selectedRafter.state" class="edit-teal-input-text form-control" type="text">
+  <br>
 
-<label>Email:</label>
-<input [(ngModel)]="selectedRafter.email" class="edit-teal-input-text">
-<br>
+  <!-- Email: -->
+  <input [(ngModel)]="selectedRafter.email" class="edit-teal-input-text form-control" type="email">
+  <br>
 
-<label>Years Rafting:</label>
-<input [(ngModel)]="selectedRafter.yearsRafting" class="edit-teal-input-text">
-<br>
+  <!-- Years Rafting: -->
+  <input [(ngModel)]="selectedRafter.yearsRafting" class="edit-teal-input-text form-control" type="number" min="1" max="80">
+  <br>
 
-<label>Favorite River Stretch:</label>
-<input [(ngModel)]="selectedRafter.favoriteRiverStretch" class="edit-teal-input-text">
-<br>
+  <!-- Favorite River Stretch: -->
+  <input [(ngModel)]="selectedRafter.favoriteRiverStretch" class="edit-teal-input-text form-control" type="text" maxlength="50">
+  <br>
 
-<label>Guide:</label>
-<input [(ngModel)]="selectedRafter.guide" class="edit-teal-input-text">
-<br>
+  <!-- Guide: -->
+  <input [(ngModel)]="selectedRafter.guide" class="edit-teal-input-text form-control" type="text" maxlength="50">
+  <br>
 
-<label>Comments:</label>
-<input [(ngModel)]="selectedRafter.comments" class="edit-teal-input-text">
-<br>
-<br>
+  <!-- Comments: -->
+  <textarea [(ngModel)]="selectedRafter.comments" class="edit-teal-input-text form-control" rows="3"></textarea>
+</div>

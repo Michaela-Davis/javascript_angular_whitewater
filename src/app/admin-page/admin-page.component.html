@@ -4,32 +4,39 @@
   </div>
   <div class="panel-body">
     <div>
-      <div>
-        <label>Name:</label>
-        <input #newName class="admin-teal-input-text">
+      <div class="add-input-row">
 
-        <label>State:</label>
-        <input #newState class="admin-teal-input-text">
+        <label class="add-input-item">Name:
+          <input #newName class="admin-teal-input-text" type="text">
+        </label>
 
-        <label>Email:</label>
-        <input #newEmail class="admin-teal-input-text">
+        <label class="add-input-item">State:
+          <input #newState class="admin-teal-input-text" type="text">
+        </label>
+
+        <label class="add-input-item">Email:
+          <input #newEmail class="admin-teal-input-text" type="email">
+        </label>
       </div>
       <br>
-      <div>
-        <label>Years Rafting:</label>
-        <input #newYearsRafting class="admin-teal-input-text" min="1" type="number">
+      <div class="add-input-row">
 
-        <label>Favorite River Stretch:</label>
-        <input #newFavoriteRiverStretch class="admin-teal-input-text">
+        <label class="add-input-item">Favorite River Stretch:
+          <input #newFavoriteRiverStretch class="admin-teal-input-text" type="text" maxlength="50">
+        </label>
 
-        <label>Guide:</label>
-        <input #newGuide class="admin-teal-input-text">
+        <label class="add-input-item">Guide:
+          <input #newGuide class="admin-teal-input-text" type="text" maxlength="50">
+        </label>
+
+        <label class="add-input-item">Years Rafting:<br>
+          <input #newYearsRafting class="admin-teal-input-text" type="number" min="1" max="80">
+        </label>
       </div>
       <br>
-      <div>
-        <label>Comments:</label>
-        <br>
-        <textarea #newComments class="admin-teal-input-text"></textarea>
+      <div class="add-comments">
+        <label class="add-comments-label">Comments:</label> <br>
+        <textarea #newComments class="add-comments admin-teal-input-text new-comment-area" rows="3"></textarea>
       </div>
 
 
@@ -48,9 +55,7 @@
       newYearsRafting.value='';
       newFavoriteRiverStretch.value='';
       newGuide.value='';
-      newComments.value=''"
-      class="btn btn-primary"
-      ><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;Add</button>
+      newComments.value=''" class="btn btn-primary"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;Save</button>
     </div>
   </div>
 </div>

@@ -194,8 +194,15 @@ app-root {
 /* begin  ADMIN PAGE  STYLING     */
 
 .panel-default>.panel-heading {
-  background-color: rgba(0, 66, 66, .90);
+  background-color: rgba(0, 66, 66, .95);
   color: white;
+  margin-top: -20px;
+}
+
+.panel-default {
+  width: 95%;
+  margin-right: auto;
+  margin-left: auto;
 }
 .admin-teal-input-text {
   color: teal;
@@ -204,6 +211,31 @@ app-root {
 
 .admin input {
   padding-right: 120px;
+}
+
+.add-input-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.new-comment-area {
+  width: 87%;
+}
+
+input[type="number"] {
+   width: 90px;
+}
+
+.add-input-item {
+  width: 20%;
+}
+
+.add-comments {
+  text-align: center;
+}
+
+.add-comments-label {
+  margin-left: -40px;
 }
 
 /* end   ADMIN PAGE   STYLING     */
@@ -215,6 +247,9 @@ app-root {
 .edit-teal-input-text {
   color: teal;
   font-size: 1.5em;
+}
+.edit-form-padding {
+  padding: 10px;
 }
 
 /* end   EDIT-RAFTER for ADMIN   STYLING     */
