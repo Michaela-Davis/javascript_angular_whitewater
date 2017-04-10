@@ -1,9 +1,10 @@
 <div class="panel panel-default">
   <div class="panel-heading panel-heading-admin">
-    <h3 class="panel-title">Add New Rafter to Group</h3>
+    <button (click)="showNewRafter()" class="btn btn-primary"><i class="fa fa-plus" aria-hidden="true"></i> &nbsp;Add a rafter</button> &nbsp; <button (click)="hideNewRafter()" class="btn"><i class="fa fa-minus" aria-hidden="true"></i> Hide</button>
   </div>
-  <div class="panel-body">
-    <div>
+
+ <div *ngIf="showNew">
+   <div class="panel-body">
       <div class="add-input-row">
 
         <label class="add-input-item">Name:
@@ -55,7 +56,7 @@
       newYearsRafting.value='';
       newFavoriteRiverStretch.value='';
       newGuide.value='';
-      newComments.value=''" class="btn btn-primary"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;Save</button>
+      newComments.value=''" class="btn btn-primary add-rafter-button"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;Save</button>
     </div>
   </div>
 </div>

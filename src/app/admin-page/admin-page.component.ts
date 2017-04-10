@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 import { Rafter } from '../rafter.model';
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
 import { RafterService } from '../rafter.service';
@@ -11,6 +11,17 @@ import { RafterService } from '../rafter.service';
 })
 export class AdminPageComponent {
     constructor(private rafterService: RafterService) { }
+    @Output() newRafterSender = new EventEmitter();
+
+    showNew: boolean = false;
+
+    showNewRafter() {
+      this.showNew = true;
+    }
+
+    hideNewRafter() {
+      this.showNew = false;
+    }
 
     submitForm(name: string,
        email: string,
@@ -27,7 +38,16 @@ export class AdminPageComponent {
          favoriteRiverStretch,
          guide,
          comments);
-      this.rafterService.addRafter(newRafter);
+        //  This makes it so they have to fill out the form before submitting
+         if (newRafter.name !== '' &&
+            newRafter.email !== '' &&
+            newRafter.state !== '' &&
+            newRafter.favoriteRiverStretch !== '' &&
+            newRafter.guide !== '') {
+           this.rafterService.addRafter(newRafter);
+         } else {
+           alert("Please enter information into all fields.");
+         }
     }
 
 }
