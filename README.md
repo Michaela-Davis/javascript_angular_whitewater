@@ -1,8 +1,11 @@
 # _Sunny Days Whitewater_
+This application allows members of Sunny Days Whitewater to connect with each other. Members can be added, edited, and deleted from an Admin page.
+#### By _**Michaela Davis**_   &nbsp; 4.07.17
 
-#### _Sunny Days Whitewater, 4.07.17_
 
-#### By _**Michaela Davis**_
+## Description
+This application allows members of Sunny Days Whitewater to connect with each other. All members can be viewed on the "RAFTERS" page, and users can click on a rafter to be dynamically routed to a detail page containing more information about that rafter. The user can also choose to view rafters from "All States", "Montana", or "Oregon". Members can be added, edited, and deleted from an Admin page.
+
 
 ## Prerequisites
 
@@ -68,5 +71,12 @@ This project was generated with [angular-cli](https://github.com/angular/angular
 
 To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
+### License
 
+*MIT license*
+
+## Planning for Sunny Days Whitewater
+<div style="text-align:center"><img src="planning/sunnyDaysWhitewaterPlanning.jpg" alt="Sunny Days Whitewater Planning" width="700"></div>
+
+<br>
 Copyright (c) 2017 Michaela Davis All Rights Reserved.
