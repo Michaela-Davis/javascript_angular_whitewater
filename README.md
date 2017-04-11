@@ -1,7 +1,7 @@
 # _Sunny Days Whitewater_
+#### [Click for live site](https://whitewater-8efd7.firebaseapp.com/rafters) <br>
 This application allows members of Sunny Days Whitewater to connect with each other. Members can be added, edited, and deleted from an Admin page.
 #### By _**Michaela Davis**_   &nbsp; 4.07.17
-
 
 ## Description
 This application allows members of Sunny Days Whitewater to connect with each other. All members can be viewed on the "RAFTERS" page, and users can click on a rafter to be dynamically routed to a detail page containing more information about that rafter. The user can also choose to view rafters from "All States", "Montana", or "Oregon". Members can be added, edited, and deleted from an Admin page.
