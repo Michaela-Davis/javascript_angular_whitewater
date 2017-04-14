@@ -7,15 +7,15 @@
 </div>
 
 
-<div *ngFor="let rafter of rafters | async | rafterSort:sortValue" class="col-sm-4" >
+<div *ngFor="let rafter of rafters | async | rafterSort:sortValue" class="col-md-4 col-sm-6" >
   <div class="panel list-panel list-center">
     <br>
-    <h3 (click)="goToDetailPage(rafter)" class="list-rafter-name-link">{{rafter.name}}</h3>
+    <h3 (click)="goToDetailPage(rafter)" class="list-rafter-name-link wordWrap">{{rafter.name}}</h3>
     <br>
     <h4>{{rafter.state}}</h4>
     <div *ngIf="currentRoute === '/admin'">
       <br>
-      <h4>{{rafter.email}}</h4>
+      <h4 class="wordWrap">{{rafter.email}}</h4>
       <app-edit-rafter [selectedRafter]="rafter"></app-edit-rafter>
     </div>
   </div>
