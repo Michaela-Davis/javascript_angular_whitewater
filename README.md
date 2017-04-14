@@ -1,5 +1,5 @@
 # _Sunny Days Whitewater_
-#### [Click for live site](https://whitewater-8efd7.firebaseapp.com/rafters) <br>
+#### [Click for live site](https://whitewater-8efd7.firebaseapp.com/) <br>
 This application allows members of Sunny Days Whitewater to connect with each other. Members can be added, edited, and deleted from an Admin page.
 #### By _**Michaela Davis**_   &nbsp; 4.07.17
 
