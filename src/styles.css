@@ -10,7 +10,7 @@ h3,
 
 body,
 p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
   color: white;
 }
 
@@ -240,6 +240,7 @@ input[type="number"] {
 
 .add-input-item {
   width: 20%;
+  font-size: 110%
 }
 
 .add-comments {
@@ -264,10 +265,17 @@ input[type="number"] {
 
 .edit-teal-input-text {
   color: teal;
-  font-size: 1.5em;
+  font-size: 2em;
 }
+
 .edit-form-padding {
   padding: 10px;
+}
+
+.btn-bottom {
+  margin-bottom: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 /* end   EDIT-RAFTER for ADMIN   STYLING     */
