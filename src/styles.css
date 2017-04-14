@@ -1,11 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 
-body,
 h1,
 h2,
 h3,
-h4 {
+.navbar {
   font-family: 'Macondo', cursive;
+  color: white;
+}
+
+body,
+p {
+  font-family: 'Open Sans', sans-serif;
   color: white;
 }
 
@@ -16,6 +21,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  width: 100%;
+  height: 100%;
 }
 
 /*Create dark overlay of body background image*/
@@ -204,6 +211,11 @@ app-root {
   margin-right: auto;
   margin-left: auto;
 }
+
+.wordWrap {
+  word-wrap: break-word;
+}
+
 .admin-teal-input-text {
   color: teal;
   font-size: 1.5em;
