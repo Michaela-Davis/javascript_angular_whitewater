@@ -1,31 +1,50 @@
 <br>
-<button (click)="beginDeletingRafter(selectedRafter)" class="btn btn-warning"><i class="fa fa-trash" aria-hidden="true"></i>&nbsp;Delete</button> &nbsp;&nbsp;&nbsp;&nbsp; <button (click)="beginUpdatingRafter(selectedRafter)" class="btn btn-info"><i class="fa fa-pencil" aria-hidden="true"></i>&nbsp;Edit</button>
-<div class="edit-form-padding">
+<button (click)="beginDeletingRafter(selectedRafter)" class="btn btn-warning btn-bottom"><i class="fa fa-trash" aria-hidden="true"></i>&nbsp;Delete</button>
+
+
+<span *ngIf="!showEdit">
+  <button (click)="showEditRafter()" class="btn btn-info btn-bottom">
+    <i class="fa fa-pencil" aria-hidden="true"></i> Edit
+  </button>
+</span>
+
+<span *ngIf="showEdit">
+  <button (click)="hideEditRafter()" class="btn btn-bottom">
+    <i class="fa fa-minus" aria-hidden="true"></i> Hide
+  </button>
+</span>
+
+<div *ngIf="showEdit">
   <hr>
-  <!-- Name -->
-  <input [(ngModel)]="selectedRafter.name" class="edit-teal-input-text form-control" type="text">
-  <br>
+  <div class="edit-form-padding">
+    <!-- Name -->
+    <input [(ngModel)]="selectedRafter.name" class="edit-teal-input-text form-control" type="text">
+    <br>
 
-  <!-- State:  -->
-  <input [(ngModel)]="selectedRafter.state" class="edit-teal-input-text form-control" type="text">
-  <br>
+    <!-- State:  -->
+    <input [(ngModel)]="selectedRafter.state" class="edit-teal-input-text form-control" type="text">
+    <br>
 
-  <!-- Email: -->
-  <input [(ngModel)]="selectedRafter.email" class="edit-teal-input-text form-control" type="email">
-  <br>
+    <!-- Email: -->
+    <input [(ngModel)]="selectedRafter.email" class="edit-teal-input-text form-control" type="email">
+    <br>
 
-  <!-- Years Rafting: -->
-  <input [(ngModel)]="selectedRafter.yearsRafting" class="edit-teal-input-text form-control" type="number" min="1" max="80">
-  <br>
+    <!-- Years Rafting: -->
+    <input [(ngModel)]="selectedRafter.yearsRafting" class="edit-teal-input-text form-control" type="number" min="1" max="80">
+    <br>
 
-  <!-- Favorite River Stretch: -->
-  <input [(ngModel)]="selectedRafter.favoriteRiverStretch" class="edit-teal-input-text form-control" type="text" maxlength="50">
-  <br>
+    <!-- Favorite River Stretch: -->
+    <input [(ngModel)]="selectedRafter.favoriteRiverStretch" class="edit-teal-input-text form-control" type="text" maxlength="50">
+    <br>
 
-  <!-- Guide: -->
-  <input [(ngModel)]="selectedRafter.guide" class="edit-teal-input-text form-control" type="text" maxlength="50">
-  <br>
+    <!-- Guide: -->
+    <input [(ngModel)]="selectedRafter.guide" class="edit-teal-input-text form-control" type="text" maxlength="50">
+    <br>
 
-  <!-- Comments: -->
-  <textarea [(ngModel)]="selectedRafter.comments" class="edit-teal-input-text form-control" rows="3"></textarea>
+    <!-- Comments: -->
+    <textarea [(ngModel)]="selectedRafter.comments" class="edit-teal-input-text form-control" rows="3"></textarea>
+  </div>
+  <button (click)="beginUpdatingRafter(selectedRafter)" class="btn btn-info btn-bottom">
+    <i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;&nbsp;Save
+  </button>
 </div>

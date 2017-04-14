@@ -1,6 +1,16 @@
 <div class="panel panel-default">
   <div class="panel-heading panel-heading-admin">
-    <button (click)="showNewRafter()" class="btn btn-primary"><i class="fa fa-plus" aria-hidden="true"></i> &nbsp;Add a rafter</button> &nbsp; <button (click)="hideNewRafter()" class="btn"><i class="fa fa-minus" aria-hidden="true"></i> Hide</button>
+      <span *ngIf="!showNew">
+        <button (click)="showNewRafter()" class="btn btn-primary">
+          <i class="fa fa-plus" aria-hidden="true"></i> &nbsp;Add a rafter
+        </button> &nbsp;
+      </span>
+
+      <span *ngIf="showNew">
+        <button (click)="hideNewRafter()" class="btn">
+          <i class="fa fa-minus" aria-hidden="true"></i> Hide
+        </button>
+      </span>
   </div>
 
  <div *ngIf="showNew">
@@ -34,9 +44,9 @@
           <input #newYearsRafting class="admin-teal-input-text" type="number" min="1" max="80">
         </label>
       </div>
-      <br>
+      <br><br>
       <div class="add-comments">
-        <label class="add-comments-label">Comments:</label> <br>
+        <label class="add-comments-label">Comments:</label> <br><br>
         <textarea #newComments class="add-comments admin-teal-input-text new-comment-area" rows="3"></textarea>
       </div>
 

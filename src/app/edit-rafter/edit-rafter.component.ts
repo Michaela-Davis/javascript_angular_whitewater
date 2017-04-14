@@ -11,9 +11,20 @@ import { RafterService } from '../rafter.service';
 export class EditRafterComponent implements OnInit {
   @Input() selectedRafter;
 
+
   constructor(private rafterService: RafterService) { }
 
   ngOnInit() {
+  }
+
+  showEdit: boolean = false;
+
+  showEditRafter() {
+    this.showEdit = true;
+  }
+
+  hideEditRafter() {
+    this.showEdit = false;
   }
 
   beginUpdatingRafter(rafterToUpdate){
